@@ -14,6 +14,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task1.V4.Lib
             {
                 File.Delete(path);
             }
+
             double y;
             string strY;
             for (int x = startValue; x <= stopValue; x++)

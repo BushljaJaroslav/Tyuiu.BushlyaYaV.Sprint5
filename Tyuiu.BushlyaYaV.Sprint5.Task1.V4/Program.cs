@@ -8,6 +8,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task1.V4
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+
             Console.Title = "Спринт #5 | Выполнил: Бушля Я. В. | ИСТН-б-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
