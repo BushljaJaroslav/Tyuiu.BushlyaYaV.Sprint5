@@ -7,6 +7,9 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task0.V20
     {
         static void Main(string[] args)
         {
+            DataService ds = new DataService();
+            int x = 2;
+
             Console.Title = "Спринт #5 | Выполнил: Бушля Я. В.  | ИСТНб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
@@ -34,11 +37,8 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task0.V20
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string path = service1.SaveToFileTextData(2);
-            Console.WriteLine("Файл записан");
-            Console.WriteLine(File.ReadLines(path).First());
-            Console.WriteLine("***************************************************************************");
-            Console.ReadKey();
+            Console.Write("Функция от данного x равна " + File.ReadAllText(ds.SaveToFileTextData(x)));
+            Console.ReadLine();
         }
     }
 }

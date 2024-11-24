@@ -9,10 +9,9 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task0.V20.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\nefor\source\repos\Tyuiu.BushlyaYaV.Sprint5\Tyuiu.BushlyaYaV.Sprint5.Task0.V20\bin\Debug\net8.0\OutPutFileTask0.txt";
-            FileInfo fileInfo = new FileInfo(path);
-            Assert.AreEqual(true, fileInfo.Exists);
-            Assert.AreEqual("29,36", File.ReadAllText(path));
+            DataService ds = new DataService();
+            var res = ds.SaveToFileTextData(2);
+            Assert.AreEqual(File.ReadAllText(res), (29.36).ToString());
         }
     }
 }
