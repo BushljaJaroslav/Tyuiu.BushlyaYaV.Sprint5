@@ -8,14 +8,13 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task3.V21.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask3.bin";
-            double res = (Math.Pow(x, 2) + 1) / (Math.Sqrt(4 * Math.Pow(x, 2) - 3));
-            res = Math.Round(res, 3);
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
 
-            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Append)))
             {
-                writer.Write(BitConverter.GetBytes(res));
+                writer.Write(Math.Round((x * x + 1) / (Math.Sqrt(4 * x * x - 3)), 3));
             }
+
             return path;
         }
     }

@@ -9,13 +9,11 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task3.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            DataService ds = new DataService();
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
 
-           FileInfo fileinfo = new FileInfo(path);
-            bool fileExists = fileinfo.Exists;
+            FileInfo fileInfo = new FileInfo(path);
             bool wait = true;
-            Assert.AreEqual(wait, fileExists);
+            Assert.AreEqual(wait, fileInfo.Exists);
         }
     }
 }
