@@ -17,6 +17,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     line = line.Replace('.', ',');
+                    line = line.Replace(',', ' ');
                     line = line.Replace(' ', '\n');
 
 
