@@ -1,6 +1,4 @@
-﻿
-using Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib;
-
+﻿using Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib;
 namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2
 {
     internal class Program

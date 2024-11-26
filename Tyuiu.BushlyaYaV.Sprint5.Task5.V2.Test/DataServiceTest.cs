@@ -1,7 +1,4 @@
-﻿
-using System.IO;
-using Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib;
-
+﻿using Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib;
 namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Test
 {
     [TestClass]
@@ -15,7 +12,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Test
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
-            Assert.AreEqual(wait, fileExists);
+            Assert.AreEqual(wait, fileExists)
         }
     }
 }
