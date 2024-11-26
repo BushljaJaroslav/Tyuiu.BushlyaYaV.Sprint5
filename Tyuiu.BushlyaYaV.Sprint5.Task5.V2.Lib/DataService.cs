@@ -16,10 +16,9 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib
                 
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string lineReplace = line.Replace('.', ',');
-                    string[] lineArray = lineReplace.Split(' ');
-
-                    if (Convert.ToDouble(line) > 0)
+                    line = line.Replace(',', ' ');
+                    line = line.Replace(' ', '\n');
+                        if (Convert.ToDouble(line) > 0)
                     {
                         sum = sum + Convert.ToDouble(line);
                         count += 1;
