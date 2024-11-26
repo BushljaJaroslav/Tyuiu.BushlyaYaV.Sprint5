@@ -11,11 +11,11 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V18.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string strX = File.ReadAllText(path);
-                strX = strX.Replace(".", ",");
                 
                 double x;
                 while ((strX = reader.ReadLine()) != null)
                 {
+                    strX = strX.Replace(".", ",");
                     x = Convert.ToDouble(strX);
                     if (Math.Abs(x) >= 10 && Math.Abs(x) <= 99)
                     {
