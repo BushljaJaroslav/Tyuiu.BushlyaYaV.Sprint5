@@ -1,5 +1,6 @@
 ﻿
 using tyuiu.cources.programming.interfaces.Sprint5;
+using System.IO;
 namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib
 {
     public class DataService : ISprint5Task5V2
@@ -11,9 +12,13 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib
             double sum = 0;
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
+                string? line;
+                
                 while ((line = reader.ReadLine()) != null)
                 {
+                    string lineReplace = line.Replace('.', ',');
+                    string[] lineArray = lineReplace.Split(' ');
+
                     if (Convert.ToDouble(line) > 0)
                     {
                         sum = sum + Convert.ToDouble(line);
