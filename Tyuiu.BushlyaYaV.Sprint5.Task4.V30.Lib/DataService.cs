@@ -10,6 +10,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task4.V30.Lib
             string strX = File.ReadAllText(path);
             double res = Math.Round((Math.Pow(Convert.ToDouble(strX), 3) - Math.Tan(Convert.ToDouble(strX))) + 2.03 * Convert.ToDouble(strX), 3);
             return res;
+          
         }
     }
 }

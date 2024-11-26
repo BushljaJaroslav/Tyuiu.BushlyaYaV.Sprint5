@@ -8,13 +8,13 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task4.V30
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.Title = "Спринт #5 | Выполнил: Коптяев Р. С. | АСОиУБ-23-3";
+            Console.Title = "Спринт #5 | Выполнил: Бушля Я. В |ИСТНб-24-1 ";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Чтение данных из текстового файла                                 *");
             Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #30                                                             *");
-            Console.WriteLine("* Выполнил: Коптяев Рустам Сергеевич | АСОиУБ-23-3                        *");
+            Console.WriteLine("* Выполнил: Бушля Ярослав Владимирович | ИСТНб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Вычислить значение по формуле (Полученное значение округлить до трёх    *");
