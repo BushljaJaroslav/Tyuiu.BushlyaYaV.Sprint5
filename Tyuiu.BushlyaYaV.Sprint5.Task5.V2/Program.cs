@@ -9,6 +9,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2
         {
             Console.Title = "Спринт #5 | Выполнил: Бушля | ИСТНб-24-1";
 
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Чтение набора данных из текстового файла                          *");
