@@ -5,6 +5,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2
     {
         static void Main(string[] args)
         {
+
             Console.Title = "Спринт #5 | Выполнил: Бушля | ИСТНб-24-1";
 
             Console.WriteLine("***************************************************************************");

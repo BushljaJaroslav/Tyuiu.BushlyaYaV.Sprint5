@@ -6,6 +6,7 @@ namespace Tyuiu.BushlyaYaV.Sprint5.Task5.V2.Lib
     {
         public double LoadFromDataFile(string path)
         {
+
             double count = 0;
             double sum = 0;
             using (StreamReader reader = new StreamReader(path))
